@@ -2,6 +2,7 @@
 #include <string>
 
 class Pallet : public IContainer {
+    
     private:
         std::string itemName;
         int itemCapacity;

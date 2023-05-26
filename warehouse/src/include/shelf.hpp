@@ -1,10 +1,8 @@
 #include "IContainer.hpp"
-#include "Pallet.hpp"
+#include "pallet.hpp"
 #include <array>
 
 class Shelf : public IContainer {
-    // private:
-    //     std::array<Pallet, 4> pallets;
 
     public:
         std::array<Pallet, 4> pallets;
