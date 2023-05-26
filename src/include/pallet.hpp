@@ -4,7 +4,7 @@
 class Pallet : public IContainer {
     
     public:
-        Pallet(const std::string& itemName, int itemCapacity, int itemCount);
+        Pallet(const std::string itemName, int itemCapacity, int itemCount);
         Pallet();
 
         std::string itemName;
@@ -14,7 +14,7 @@ class Pallet : public IContainer {
         std::string getItemName();
         int getItemCount();
         int getRemainingSpace();
-        bool reallocateEmptyPallet(const std::string& itemName, int itemCapacity);
+        bool reallocateEmptyPallet(const std::string itemName, int itemCapacity);
         bool takeOne();
         bool putOne();
 

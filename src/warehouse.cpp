@@ -13,7 +13,7 @@ Warehouse::Warehouse() {}
  * 
  * @param employee An employee to be added to the warehouse.
  */
-void Warehouse::addEmployee(Employee& employee) {
+void Warehouse::addEmployee(Employee employee) {
     employees.push_back(employee);
 }
 
@@ -23,7 +23,7 @@ void Warehouse::addEmployee(Employee& employee) {
  * 
  * @param shelf A shelf to be added to the warehouse.
  */
-void Warehouse::addShelf(Shelf& shelf) {
+void Warehouse::addShelf(Shelf shelf) {
     shelves.push_back(shelf);
 }
 
@@ -72,7 +72,7 @@ bool Warehouse::rearrangeShelf(Shelf& shelf) {
  * @param itemCount The number of items to pick.
  * @return True if the required number of items were successfully picked, false otherwise.
  */
-bool Warehouse::pickItems(std::string& itemName, int itemCount) {
+bool Warehouse::pickItems(std::string itemName, int itemCount) {
     int remainingItems = itemCount;
 
     for (auto& shelf : shelves) {

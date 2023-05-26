@@ -18,6 +18,19 @@ bool Shelf::swapPallet(int slot, int slot2) {
 
 
 /**
+ * @brief Adds a pallet to the shelf.
+ * 
+ * @param slot The slot to add the pallet to.
+ * @param pallet The pallet to add.
+ */
+void Shelf::addPallet(int slot, Pallet pallet) {
+    if (slot >= 0 && slot < pallets.size()) {
+        pallets[slot] = pallet;
+    }
+}
+
+
+/**
  * @brief Checks if the shelf is empty.
  * 
  * @return true or false depending on whether the shelf is empty.

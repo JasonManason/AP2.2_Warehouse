@@ -8,7 +8,7 @@
  * @param itemCapacity The capacity of the pallet.
  * @param itemCount The item count of the pallet.
  */
-Pallet::Pallet(const std::string& itemName, int itemCapacity, int itemCount)
+Pallet::Pallet(const std::string itemName, int itemCapacity, int itemCount)
     : itemName(itemName), itemCapacity(itemCapacity), itemCount(itemCount) {}
 
 
@@ -56,7 +56,7 @@ int Pallet::getRemainingSpace() {
  * @param itemCapacity The capacity of the pallet.
  * @return true or false depending on if the pallet was reallocated. 
  */
-bool Pallet::reallocateEmptyPallet(const std::string& itemName, int itemCapacity) {
+bool Pallet::reallocateEmptyPallet(const std::string itemName, int itemCapacity) {
     if (itemCount == 0) {
         this->itemName = itemName;
         this->itemCapacity = itemCapacity;
