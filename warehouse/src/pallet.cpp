@@ -7,15 +7,15 @@ Pallet::Pallet(const std::string& itemName, int itemCapacity, int itemCount)
 Pallet::Pallet()
     : itemCapacity(0), itemCount(0) {}
 
-std::string Pallet::getItemName() const {
+std::string Pallet::getItemName() {
     return itemName;
 }
 
-int Pallet::getItemCount() const {
+int Pallet::getItemCount() {
     return itemCount;
 }
 
-int Pallet::getRemainingSpace() const {
+int Pallet::getRemainingSpace() {
     return itemCapacity - itemCount;
 }
 
@@ -42,4 +42,12 @@ bool Pallet::putOne() {
         return true;
     }
     return false;
+}
+
+bool Pallet::isEmpty() {
+    return itemCount == 0;
+}
+
+bool Pallet::isFull() {
+    return itemCount == itemCapacity;
 }

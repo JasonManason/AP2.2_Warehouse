@@ -11,3 +11,21 @@ bool Shelf::swapPallet(int slot, int slot2) {
     }
     return false;
 }
+
+bool Shelf::isEmpty() {
+    for (int i = 0; i < 4; i++) {
+        if (!pallets[i].isEmpty()) {
+            return false;
+        }
+    }
+    return true;
+}
+
+bool Shelf::isFull() {
+    for (int i = 0; i < 4; i++) {
+        if (!pallets[i].isFull()) {
+            return false;
+        }
+    }
+    return true;
+}
