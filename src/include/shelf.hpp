@@ -1,12 +1,12 @@
-// #include "IContainer.hpp"
 #include "pallet.hpp"
 #include <array>
 
 class Shelf : public IContainer {
 
-    public:
-        std::array<Pallet, 4> pallets;
+    public: 
         Shelf();
+        
+        std::array<Pallet, 4> pallets;
         bool swapPallet(int slot, int slot2);
 
         // Interface methods

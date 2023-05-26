@@ -1,11 +1,28 @@
 #include "include/warehouse.hpp"
 
+
+/**
+ * @brief Constructs a new Warehouse object.
+ * 
+ * This constructor is empty, as the warehouse is initialized with no employees or shelves.
+ */
 Warehouse::Warehouse() {}
 
+/**
+ * @brief Adds an employee to the warehouse.
+ * 
+ * @param employee An employee to be added to the warehouse.
+ */
 void Warehouse::addEmployee(Employee& employee) {
     employees.push_back(employee);
 }
 
+
+/**
+ * @brief Adds a shelf to the warehouse.
+ * 
+ * @param shelf A shelf to be added to the warehouse.
+ */
 void Warehouse::addShelf(Shelf& shelf) {
     shelves.push_back(shelf);
 }
