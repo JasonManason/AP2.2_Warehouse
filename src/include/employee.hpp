@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
 
-
 class Employee {
+    
     private:
         const std::string name;
         bool busy;

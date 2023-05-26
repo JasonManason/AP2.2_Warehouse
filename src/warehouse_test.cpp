@@ -1,4 +1,6 @@
 #include "include/warehouse.hpp"
+#include "employee.cpp"
+#include "shelf.cpp"
 
 
 Warehouse::Warehouse() {}

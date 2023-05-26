@@ -3,14 +3,13 @@
 
 class Pallet : public IContainer {
     
-    private:
-        std::string itemName;
-        int itemCapacity;
-        int itemCount;
-
     public:
         Pallet(const std::string& itemName, int itemCapacity, int itemCount);
         Pallet();
+
+        std::string itemName;
+        int itemCapacity;
+        int itemCount;
 
         std::string getItemName();
         int getItemCount();
